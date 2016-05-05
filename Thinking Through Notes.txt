@@ -1,0 +1,28 @@
+Thinking Through Project
+
+"Implement a single page web application which utilizes a remote api and saves data between browsing sessions. 
+The project is expected to utilize all of the major technologies covered in the course:
+	Semantic HTML5
+	Advanced CSS
+	JavaScript 
+	Implement at least 3 views. Different views contain substantially different HTML and have different use cases for the use.
+	Utilize a remote API for date retrieval.
+	Allow users to create preferences and save the state between browser sessions.
+	Use a templating language/framework to avoid introducing XSS vulnerabilities.
+	Use a build system to package up your project and manage dependencies.
+	Style/theme your templates. CSS is required for this assignment. "
+	
+Thoughts: 
+	Covering the first few should be easy. CSS and HTML covered anyway.
+	Javascript will be interesting. Have to come up with somewhere to throw it in.
+	  Could do the button thing again. See if I can't find some good code. At least on mobile view. Maybe.
+	Three different views. Full screen, half-screen, and mobile are probably the best bets. 
+	  Banner on the top like DA for half screen probably good bet.
+	  Button good for the mobile. Put it right under the main/default view. Only shows one horoscope at any given time. Button drops button to pick another.
+	  Full desktop... still not sure what to do there. Probably all the horosopes, the default on top. Otherwise, whichever is alphabetical.
+	    (Probably follow template of the Soteria bubble things.)
+	Remote API will just be for the horoscope data. Shouldn't be terrible.
+	Preferences will just be the default, which is at top.
+	XSS vulnerabilities? Have to read into that.
+	Same for the build system.
+	CSS should be easy. Almost handle itself after the bubble thing.
