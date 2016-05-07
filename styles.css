@@ -2,9 +2,37 @@ body {
 	background-color: #F1DEA3; 
 }
 
-p {
-
+.NavShowHide a span {
+  -webkit-box-shadow: 0 10px 0 1px #333333, 0 16px 0 1px #333333, 0 22px 0 1px #333333;
+  -moz-box-shadow: 0 10px 0 1px #333333, 0 16px 0 1px #333333, 0 22px 0 1px #333333;
+  box-shadow: 0 10px 0 1px #333333, 0 16px 0 1px #333333, 0 22px 0 1px #333333;
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: 0;
+  left: 0.8125rem;
+  top: 0.3125rem;
 }
+
+.NavShowHide a {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  cursor: pointer;
+  text-indent: 2.1875rem;
+  width: 45px;
+  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: block;
+  line-height: 2.0625rem;
+  padding: 0;
+  color: white;
+  position: relative;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.8);	}
 
 .signs{
 	border-radius: 10px; 
@@ -13,20 +41,44 @@ p {
 
 .banner{ 
 	border: none; padding: 0px; 
-	width: 100%;margin: 0px; 
+	width: 100%; margin: 0px; 
 	height: 120px;
 }
 
 @media (max-width: 568px){ /* Mobile View */
-
+	.mobile{
+		display: none; 
+	}
+	.half{
+		display: none; 
+	}
+	.NavShowHide{
+		display: block;
+	}
+	.MainNav{
+		display: none;
+	}
 }
 	
 @media (max-width: 700px){ /* Half Desktop Screen */
-
+	.mobile{
+		display: none; 
+	}
+	.NavShowHide{
+		display: block;
+	}
+	.MainNav{
+		display: none;
+	}
 }
 	
 @media (min-width: 701px){ /* Full Desktop */
-
+	.NavShowHide{
+		display: none;
+	}
+	.MainNav{
+		display: none;
+	}
 }
 
 .horoscopes{

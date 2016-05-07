@@ -2,15 +2,15 @@ Thinking Through Project
 
 "Implement a single page web application which utilizes a remote api and saves data between browsing sessions. 
 The project is expected to utilize all of the major technologies covered in the course:
-	Semantic HTML5
-	Advanced CSS
-	JavaScript 
+	Semantic HTML5			Done
+	Advanced CSS			Done 
+	JavaScript 				Done.
 	Implement at least 3 views. Different views contain substantially different HTML and have different use cases for the use.
-	Utilize a remote API for date retrieval.
-	Allow users to create preferences and save the state between browser sessions.
-	Use a templating language/framework to avoid introducing XSS vulnerabilities.
-	Use a build system to package up your project and manage dependencies.
-	Style/theme your templates. CSS is required for this assignment. "
+	Utilize a remote API for date retrieval.												Waiting on Stack to answer that one
+	Allow users to create preferences and save the state between browser sessions.			No idea.
+	Use a templating language/framework to avoid introducing XSS vulnerabilities.			No idea.
+	Use a build system to package up your project and manage dependencies.					No idea.
+	Style/theme your templates. CSS is required for this assignment. "						Done.
 	
 Thoughts: 
 	Covering the first few should be easy. CSS and HTML covered anyway.
