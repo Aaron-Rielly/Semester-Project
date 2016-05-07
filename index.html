@@ -5,6 +5,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Daily Horoscope</title>
 	<link rel="Stylesheet" media="all" href="styles.css" />
+	<link rel="shortcut icon" type="icon/x-icon" href="icon.jpg" />
 </head>
 
 <body>
@@ -12,41 +13,90 @@
 	<h2>What's your day going to be? Find out now!</h2>
 	<h4>If this is your first visit, scroll on down to your horoscope. Select your sign at from the bottom radial buttons, 
 	so when you join us next time, your horoscope will be at the top of the list!</h4>
-	<div class = "horoscopes">
-		<img class="signs" src="aries.jpg" alt="Aries Sign" align="left" /><p>Horoscope here.</p>
+	
+	<div class="NavShowHide"><a onclick="ToggleNav(this)"></a>
+        <nav class="Column MainNav">
+            <h3>Aries</h3>
+            <h3>Taurus</h3>
+			<h3>Gemini</h3>
+			<h3>Cancer</h3>
+			<h3>Leo</h3>
+			<h3>Virgo</h3>
+			<h3>Libra</h3>
+			<h3>Scorpio</h3>
+			<h3>Sagittarius</h3>
+			<h3>Capricorn</h3>
+			<h3>Aquarius</h3>
+			<h3>Pisces</h3>
+        </nav>
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="taurus.jpg" alt="Taurus Sign" align="left" /><p>Horoscope here.</p>
+	<p id="default"></p>
+	
+	<script>
+	if (localStorage.getItem("sign") == null){
+		break; }
+	else{
+		document.getElementById("default").innerHTML = localStorage.getItem("sign") + " is the default."; }
+	</script>
+	
+	<div class = "horoscopes" id="aries">
+		<img class="signs" src="aries.jpg" alt="Aries Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="gemini.jpg" alt="Gemini Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes half" id="taurus">
+		<img class="signs" src ="taurus.jpg" alt="Taurus Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="cancer.jpg" alt="Cancer Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes half" id="gemini">
+		<img class="signs" src ="gemini.jpg" alt="Gemini Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="leo.jpg" alt="Leo Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes half" id="cancer">
+		<img class="signs" src ="cancer.jpg" alt="Cancer Sign" align="left" /> 
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="virgo.jpg" alt="Virgo Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="leo">
+		<img class="signs" src ="leo.jpg" alt="Leo Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="libra.jpg" alt="Libra Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="virgo">
+		<img class="signs" src ="virgo.jpg" alt="Virgo Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="scorpio.jpg" alt="Scorpio Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="libra">
+		<img class="signs" src ="libra.jpg" alt="Libra Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="sagitarius.jpg" alt="Sagittarius Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="scoprio">
+		<img class="signs" src ="scorpio.jpg" alt="Scorpio Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="capricorn.jpg" alt="Capricorn Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="sagittarius">
+		<img class="signs" src ="sagitarius.jpg" alt="Sagittarius Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="aquarius.jpg" alt="Aquarius Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="capricorn">
+		<img class="signs" src ="capricorn.jpg" alt="Capricorn Sign" align="left" />
 	</div>
-	<div class = "horoscopes">
-		<img class="signs" src ="pisces.jpg" alt="Pisces Sign" align="left" /><p>Horoscope here.</p>
+	<div class = "horoscopes mobile" id="aquarius">
+		<img class="signs" src ="aquarius.jpg" alt="Aquarius Sign" align="left" />
 	</div>
+	<div class = "horoscopes mobile" id="pisces">
+		<img class="signs" src ="pisces.jpg" alt="Pisces Sign" align="left" />
+	</div>
+	<fieldset>
+	<legend> What's Your Sign? </legend>
+		<label><input type="radio" name="sign" value="aries" checked="checked"/>Aries</label>
+		<label><input type="radio" name="sign" value="taurus" />Taurus</label>
+		<label><input type="radio" name="sign" value="gemini" />Gemini</label>
+		<label><input type="radio" name="sign" value="cancer" />Cancer</label>
+		<label><input type="radio" name="sign" value="leo" />Leo</label>
+		<label><input type="radio" name="sign" value="virgo" />Virgo</label>
+		<label><input type="radio" name="sign" value="libra" />Libra</label>
+		<label><input type="radio" name="sign" value="scorpio" />Scorpio</label>
+		<label><input type="radio" name="sign" value="sagittarius" />Sagittarius</label>
+		<label><input type="radio" name="sign" value="capricorn" />Capricorn</label>
+		<label><input type="radio" name="sign" value="aquarius" />Aquarius</label>
+		<label><input type="radio" name="sign" value="pisces" />Pisces</label>
+	</fieldset>
+	<script src="nav.js" async></script>
+	<script>
+		$('input[name=sign]').click(function() {
+		var sign = sign.
+		localStorage.setItem("sign", $('input[name=gender]:checked').val());
+		alert($('input[name=sign]:checked').val());
+	});
+	</script>
 </body>
 </html>
